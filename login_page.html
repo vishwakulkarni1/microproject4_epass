@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+				<style type="text/css">
+
+
+					body {
+						background-image:url(registrationbackground.jpg);
+						background-size:cover;
+						background-attachment: fixed;
+						margin-left:25px;
+						overflow-x:hidden;
+						width:auto;
+						font-family: Helvetica, Arial, sans-serif;
+
+					}
+					#logo {
+						margin-top:-2px;
+						width:300px;
+						float:left;
+						margin-right: 8px;
+					}
+
+					.logo-name {
+						position:relative;
+						left:1320px;
+						bottom:65px;
+						font-size:100%;
+						color: gray;
+						font-family: Courier New ;
+					}
+
+					.logo-name-2 {
+						position:relative;
+						left:1400px;
+						bottom:75px;
+						font-size:70%;
+						color: gray;
+						font-family: Courier New ;
+
+					}
+
+					#more {
+						width:16px;
+						margin-left: 20px;
+					}
+
+
+					.clear {
+						clear:both;
+					}
+
+
+					.loginbtn {
+						position:relative;
+						left:40px;
+						background-color: #04AA6D;
+						color: white;
+						padding: 16px 20px;
+						margin: 8px 0;
+						border: none;
+						cursor: pointer;
+						width: 45%;
+						opacity: 0.9;
+					}
+
+					.loginbtn:hover {
+						opacity: 1;
+					}
+
+					a {
+						color: dodgerblue;
+					}
+
+					hr {
+						border: 1px solid #f1f1f1;
+						margin-bottom: 25px;
+					}
+
+					input[type=text], input[type=number] {
+
+						position:relative;
+						left:10px;
+						width: 30%;
+						padding: 16px;
+						margin: 5px 0 22px 0;
+						display: inline-block;
+						border: none;
+						background: #f1f1f1;
+					}
+
+
+					input[type=text]:focus, input[type=number]:focus {
+						position:relative;
+						right:10px;
+						background-color: #ddd;
+						outline: none;
+					}
+                 </style>
+</head>
+<div id="logo">
+    <img id="logo" src="1.png">
+    <p class="logo-name"> Covid 19 Portal  </p>
+    <p class="logo-name-2"> -By NGIT </p>
+</div>
+<div >
+	<h1 align="center"><b><u>E-Pass</u></b></h1><br>
+    <form method="post" action="/login_page">
+
+        <label align="left"> First Name :</label><input type="text" name='fname' placeholder="First Name" required><br><br>
+        <label> Last Name :</label><input type="text" name="name" placeholder="Last Name" required><br><br>
+        <label> Email Id :</label><input type="text" name="email" placeholder="Email" required><br><br>
+        <label> Source state :</label><input type="text" name="source_state" placeholder="source_state" required><br><br>
+        <label> Source District :</label><input type="text" name="source" placeholder="traveling_from" required><br><br>
+        <label>Destination State :</label><input type="text" name="dest_state" placeholder="destination_state" required><br><br>
+        <label>Destination District :</label><input type="text" name="destination" placeholder="destination" required><br><br>
+        <label> Mobile Number :</label><input type="number" name="phoneNumber" placeholder="Phone number" required><br><br>
+        <label> Aadhaar Number :</label><input type="number" name="idcard" placeholder="Id proof" required><br><br>
+        <label> Travel Date :</label><input type="text" name="trip" placeholder="travel_date" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</html>
